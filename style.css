@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Animation */
+@keyframes gradientBG {
+    0% {background-position: 0%}
+    50% {background-position: 100%}
+    100% {background-position: 0%}
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Inputs */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background: #00c6ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
