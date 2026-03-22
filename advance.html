@@ -180,14 +180,14 @@ button {
   <div>
     <a href="#student-agreement">studentAggriment</a>
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
     <a href="#resume">Resume</a>
     <a href="#modules">Modules</a>
+    <a href="#projects">Projects</a>
      <a href="#contact">Contact</a>
      <a href="assignments">Assignments</a>
     <span onclick="toggleMode()">🌙</span>
   </div><br>
-</nav><br>
+</nav><br><br><br><br><br><br>
 
 <header>
     <div class="logo">
@@ -259,51 +259,6 @@ button {
 
 </section>
 
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
-  <div class="projects">
-
-    <div class="card">
-      <h3>Calculator</h3><br>
-      <a href="calculator.pdf.html" view>view project</a><br>
-      <button class="btn" onclick="openPreview('calculator.pdf.html')">view project</button>
-    </div>
-      
-
-    <div class="card">
-      <h3>To-Do App</h3><br>
-      <a href="todo.pdf" view>view project</a><br>
-      <button class="btn" onclick="openPreview('todo.pdf')">view project</button>
-    </div><br>
-
-
-  </div>
-</section>
-<section id="assignments" class="reveal">
-  h2>Assignments</h2>
-    <div class="card">
-      <h3>assignment1</h3><br>
-      <a href="WhatsApp Image 2026-03-21 at 9.46.23 PM.jpeg" view>view project</a><br>
-      <button class="btn" onclick="openPreview('WhatsApp Image 2026-03-21 at 9.46.23 PM.jpeg')">view project</button>
-    </div>
-
-</section>
-
-<section id="contact" class="reveal">
-  <h2>Contact</h2>
-  <br>
-  <p>E-mail:kanchankendre@gmail.com</p><br>
-  <p>Call:+91-9284342498</p><br>
-  
-  <h2>Get in Touch</h2>
-
-    <form onsubmit="return sendMessage()">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
 <section id="modules" class="reveal">
   <h2>Modules</h2>
 
@@ -389,6 +344,54 @@ button {
 </div>
 
 
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Calculator</h3><br>
+      <a href="calculator.pdf.html" view>view project</a><br>
+      <button class="btn" onclick="openPreview('calculator.pdf.html')">view project</button>
+    </div>
+      
+
+    <div class="card">
+      <h3>To-Do App</h3><br>
+      <a href="todo.pdf" view>view project</a><br>
+      <button class="btn" onclick="openPreview('todo.pdf')">view project</button>
+    </div><br>
+
+
+  </div>
+</section>
+<section id="assignments" class="reveal">
+  h2>Assignments</h2>
+    <div class="card">
+      <h3>assignment1</h3><br>
+      <a href="WhatsApp Image 2026-03-21 at 9.46.23 PM.jpeg" view>view project</a><br>
+      <button class="btn" onclick="openPreview('WhatsApp Image 2026-03-21 at 9.46.23 PM.jpeg')">view project</button>
+    </div>
+
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <br>
+  <p>E-mail:kanchankendre@gmail.com</p><br>
+  <p>Call:+91-9284342498</p><br>
+  
+  <h2>Get in Touch</h2>
+
+    <form onsubmit="return sendMessage()">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+
+
 
 
 <footer>© 2026 Kanchan Kendre</footer>
@@ -461,24 +464,52 @@ function openModule(module) {
   if (module === "module1") {
     content = `
       <h2>Web Development</h2>
-      <p><b>Day 1: </b>HTML is used to structure content on a webpage. 
-       Tags like <p> create paragraphs,(b) makes text bold, (i) makes it italic,
-       and <marquee> shows moving text.</p><BR>
-      <p><b>Day 2:</b> Learn how to add images, links, videos, and audio to a webpage.
-         Tables are used to display data in rows and columns.</p><br>
-      <p><b>Day 3:</b> Forms are used to collect user data like name, email, 
-        and messages using input fields and buttons.</p><br>
-      <p><b>Day 4:</b> Header, navigation, and footer define webpage structure. 
-        CSS selectors help apply styles to elements.</p><br>
-      <p><b>Day 5:</b> Box model controls spacing and layout.
-         Flexbox helps align items easily in rows or columns.</p><br>
-      <p><b>Day 6:</b> JavaScript adds interactivity. Variables store data,
-         operators perform operations, and functions organize code.</p><br>
      
-      <p><b>Day 7:</b> DOM allows JavaScript to change webpage content dynamically. 
-        Used to build real projects like task managers.</p>
-     
-      
+      <div class="days">
+
+  <div class="day">Day 1<br>Learned to add images, links, audio, and video using tags like <img> and <a>.
+Also studied how to create tables using <table>, <tr>, and <td>.
+These elements make websites more interactive and informative.
+Practiced embedding media and organizing data in table format.
+Improved webpage design with multimedia content.</div><br><br>
+
+  <div class="day">Day 2<br>Learned to add images, links, audio, and video using tags like <img> and <a>.
+Also studied how to create tables using <table>, <tr>, and <td>.
+These elements make websites more interactive and informative.
+Practiced embedding media and organizing data in table format.
+Improved webpage design with multimedia content.</div><br><br>
+
+  <div class="day">Day 3<br>Learned how to create forms using (form), (input), and (button).
+Forms are used to collect user data like name, email, etc.
+Explored different input types like text, radio, checkbox.
+Understood basic validation and structure of forms.
+Created a simple user registration form.</div><br><br>
+
+  <div class="day">Day 4<br>Learned to structure a webpage using header, navigation bar, and footer.
+Used CSS selectors to style different elements.
+Improved page organization and readability.
+Understood how to design a basic website layout.
+Created a structured webpage </div><br><br>
+  <div class="day">Day 5<br>Learned about CSS box model (margin, padding, border, content).
+Understood spacing and layout control in web design.
+Explored Flexbox to align items easily in rows/columns.
+Used Flexbox properties like justify-content and align-items.
+Created responsive and well-aligned layouts.</div><br><br>
+
+  <div class="day">Day 6<br>Learned basics of JavaScript like variables, functions, and operators.
+Understood how JS adds interactivity to webpages.
+Practiced simple calculations and events.
+Learned to connect JavaScript with HTML.
+Built small interactive features like button actions..</div><br><br>
+
+  <div class="day">Day 7<br>Applied all learned concepts to build a small project.
+Combined HTML, CSS, and JavaScript in one webpage.
+Revised all previous topics for better understanding.
+Improved design and functionality of the project.
+Gained confidence in basic web development skills.</div><br><br>
+
+</div>
+
     `;
   }
 
